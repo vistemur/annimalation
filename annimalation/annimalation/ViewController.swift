@@ -10,16 +10,14 @@ import UIKit
 
 final class ViewController: UIViewController {
 
-    // TODO: - Rename this variable
-    private var touch = false
+    private var UserTouchesButton = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
-    // TODO: - rename method to mainButtonPressed(_ sender: UIButton) for example
-    @IBAction private func mainButton(_ sender: UIButton) {
-        if !touch {
+    @IBAction func mainButtonPressed(_ sender: UIButton) {
+        if !UserTouchesButton {
             UIView.animate(withDuration: 3) {
                 sender.layer.cornerRadius = sender.frame.height / 2
                 sender.backgroundColor = .red
@@ -30,6 +28,6 @@ final class ViewController: UIViewController {
                 sender.backgroundColor = .blue
             }
         }
-        touch = !touch
+        UserTouchesButton = !UserTouchesButton
     }
 }

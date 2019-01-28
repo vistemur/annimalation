@@ -26,7 +26,7 @@
                                     <constraint firstAttribute="height" constant="100" id="tcC-Ce-eHc"/>
                                 </constraints>
                                 <connections>
-                                    <action selector="mainButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u3u-wg-d7C"/>
+                                    <action selector="mainButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DN1-ky-KXi"/>
                                 </connections>
                             </button>
                         </subviews>
